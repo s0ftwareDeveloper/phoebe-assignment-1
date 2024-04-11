@@ -12,10 +12,10 @@
 
 <body>
     <!--First Section-->
-    <div class="section" style="margin-top: 18px; margin-right: 100px;">
+    <div class="section" style="margin-top: 18px; margin-right: 180px;">
         <!--Logo Image-->
         <div style="flex-grow: 96; align-self: flex-start;">
-            <img id="logo" src="./images/logo.png" />
+            <img id="logo-img" src="./images/logo.png" />
         </div>
         <!--Sign In Text-->
         <div>
@@ -30,24 +30,28 @@
     <!--Second Section-->
     <div class="section" style="margin-top: 250px;">
         <!--Vertical Flexbox-->
-        <div style="display: flex; flex-direction: column;">
+        <div style="display: flex; flex-direction: column; flex: 1 1 200px; margin-top: 77px">
             <div>
-                <h3>Functional Music to Improve</h3>
+                <h2>Functional Music to Improve</h2>
             </div>
-            <h2>Focus in 15 Minutes</h2>
+            <h3>Focus in 15 Minutes</h3>
             <p id="first-paragraph">
-                Our science-first approach creates music that sounds <br />
-                different-and affects your brain differently-than any other <br />
+                Our science-first approach creates music that sounds
+                different-and affects your brain differently-than any other
                 music.
             </p>
             <div id="featured-text">
                 FEATURED IN
             </div>
-            <img src="./images/clout.png" />
-            <input class="button" type="button" value="Try 5 free sessions" />
+            <div>
+                <img id="featured-img" src="./images/clout.png" />
+            </div>
+            <div>
+                <input id="session-button" class="button" type="button" value="Try 5 free sessions" style="align-content: flex-start; white-space: normal;"/>
+            </div>
         </div>
-        <div style="display: flex; flex: 0 1 400px;">
-            <img style="width: 100%;"src="./images/picture-1.gif" />
+        <div id="gif-1">
+            <img src="./images/picture-1.gif" />
         </div>
     </div>
 </body>
