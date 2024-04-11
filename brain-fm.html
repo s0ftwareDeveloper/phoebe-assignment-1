@@ -1,1 +1,55 @@
-<!-- your work goes here -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Page Title (Shows in Tab)-->
+    <title>Brain.fm</title>
+    <!--Specifies the character encoding for HTML doc-->
+    <meta charset="UTF-8" />
+    <!--Linking style.css file-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+    <!--First Section-->
+    <div class="section" style="margin-top: 18px; margin-right: 100px;">
+        <!--Logo Image-->
+        <div style="flex-grow: 96; align-self: flex-start;">
+            <img id="logo" src="./images/logo.png" />
+        </div>
+        <!--Sign In Text-->
+        <div>
+            <!--anchor tag for link (good practice)-->
+            <a id="sign-in-link" href="">Sign In</a>
+        </div>
+        <!--Try For Free Button-->
+        <div>
+            <input id="try-button" class="button" type="button" value="Try for free" />
+        </div>
+    </div>
+    <!--Second Section-->
+    <div class="section" style="margin-top: 250px;">
+        <!--Vertical Flexbox-->
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <h3>Functional Music to Improve</h3>
+            </div>
+            <h2>Focus in 15 Minutes</h2>
+            <p id="first-paragraph">
+                Our science-first approach creates music that sounds <br />
+                different-and affects your brain differently-than any other <br />
+                music.
+            </p>
+            <div id="featured-text">
+                FEATURED IN
+            </div>
+            <img src="./images/clout.png" />
+            <input class="button" type="button" value="Try 5 free sessions" />
+        </div>
+        <div style="display: flex; flex: 0 1 400px;">
+            <img style="width: 100%;"src="./images/picture-1.gif" />
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,101 @@
+/* Custom Fonts */
+@font-face {
+    /* font name */
+    font-family: 'abrade-book';
+    /* locate font in folder */
+    src: url("../fonts/abrade-book.ttf");
+}
+
+@font-face {
+    /* font name */
+    font-family: 'abrade-bold';
+    /* locate font in folder */
+    src: url("../fonts/abrade-bold.ttf");
+}
+
+@font-face {
+    /* font name */
+    font-family: 'abrade-semi-light';
+    /* locate font in folder */
+    src: url("../fonts/abrade-semi-light.ttf");
+}
+
+body {
+    background-color: rgba(73, 18, 246);
+}
+
 h1 {
     font-size: 10em;
+}
+
+h2 {
+    font-size: 60px;
+    color: white;
+    font-family: "abrade-bold";
+    margin: 0px;
+}
+
+h3 {
+    font-size: 50px;
+    color: white;
+    font-family: "abrade-semi-light";
+    margin: 0px;
+}
+
+/* Color of anchor link text */
+a:link, a:visited, a:hover {
+    color: white;
+    /* removes underline */
+    text-decoration: none;
+}
+
+.section {
+    display: flex;
+    /* Change Font */
+    padding-right: 60px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.button {
+    color: white;
+    background-image: linear-gradient(to right, rgb(235, 159, 61) , rgb(238, 127, 57));
+    border: 0px;
+    font-family: "abrade-bold";
+    border-radius: 50px;
+    font-size: 20px;
+    /* removes underline */
+    text-decoration: none;
+}
+
+#try-button {
+    padding: 14px 32px;
+    flex-grow: 2;
+}
+
+#sign-in-link {
+    font-size: 20px;
+    font-family: "abrade-book";
+    color: rgb(219, 206, 252);
+    flex-grow: 2;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+#logo {
+    width: 13%;
+}
+
+#first-paragraph {
+    font-size: 20px;
+    font-family: "abrade-book";
+    color: rgb(219, 206, 252);
+    font-weight: 600;
+}
+
+#featured-text {
+    font-size: 13px;
+    font-family: "abrade-book";
+    color: rgb(219, 206, 252);
+    font-weight: 600;
 }
