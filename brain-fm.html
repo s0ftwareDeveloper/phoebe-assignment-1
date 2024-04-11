@@ -12,7 +12,7 @@
 
 <body>
     <!--First Section-->
-    <div class="section" style="margin-top: 18px; margin-right: 180px;">
+    <div id="section-1" class="section">
         <!--Logo Image-->
         <div style="flex-grow: 96; align-self: flex-start;">
             <img id="logo-img" src="./images/logo.png" />
@@ -28,16 +28,16 @@
         </div>
     </div>
     <!--Second Section-->
-    <div class="section" style="margin-top: 250px;">
+    <div id="section-2" class="section">
         <!--Vertical Flexbox-->
-        <div style="display: flex; flex-direction: column; flex: 1 1 200px; margin-top: 77px">
+        <div id="section-2-left-side">
             <div>
                 <h2>Functional Music to Improve</h2>
             </div>
             <h3>Focus in 15 Minutes</h3>
             <p id="first-paragraph">
-                Our science-first approach creates music that sounds
-                different-and affects your brain differently-than any other
+                Our science-first approach creates music that sounds <br>
+                different-and affects your brain differently-than any other <br>
                 music.
             </p>
             <div id="featured-text">
@@ -47,11 +47,70 @@
                 <img id="featured-img" src="./images/clout.png" />
             </div>
             <div>
-                <input id="session-button" class="button" type="button" value="Try 5 free sessions" style="align-content: flex-start; white-space: normal;"/>
+                <input id="session-button" class="button" type="button" value="Try 5 free sessions" />
             </div>
         </div>
-        <div id="gif-1">
+        <!--Right-side image-->
+        <div id="section-2-right-side">
             <img src="./images/picture-1.gif" />
+        </div>
+    </div>
+    <div id="see-science-text">
+            Wanna see the science?
+    </div>
+    <!--Third Section-->
+    <div id="section-3" class="section">
+        <div id="section-3-left-side">
+
+        </div>
+        <!--Left Side-->
+        <div class="section-3-box" style="margin-left: 130px">
+            <div>
+                <img id="gif-2" src="./images/picture-2.gif" />
+            </div>
+            <div>
+                <h4>Patented Technology</h4>
+            </div>
+            <div>
+                <p>
+                    Brain.fm holds patents on key processes for creating <br>
+                    functional music, including technology to elicit <b class="bolded">strong neutral <br>
+                    phase locking</b>--allowing populations of neurons to engage in <br>
+                    various kinds of coordinated activity--and technology to <br>
+                    remove distraction in sound.
+                </p>
+                <p>
+                    This makes our music unique, purpose-built to steer you into a <br>
+                    desired mental state. In other words, we've found new ways to <br>
+                    create music that helps you do what you need to do.
+                </p>
+                <a id="explore-link" href="">Explore More of Our Science</a>
+            </div>
+        </div>
+        <!--Right Side-->
+        <div class="section-3-box" style="margin: 72px 135px 0px 20px">
+            <div>
+                <img id="gif-3" src="./images/picture-3.png"/>
+            </div>
+            <div>
+                <h4>Tested on Brain and Behavior</h4>
+            </div>
+            <div>
+                <p>
+                    Scientists at Brain.fm work with collaborators at academic
+                    institutions to run experiments.
+                </p>
+                <p>
+                    We look at the effects of our technology on the brain, using
+                    fMRI and EEG, and also run large-scale behavioral tests,
+                    measuring performance on simple games.
+                </p>
+                <p>
+                    <b class="bolded">Our experiments always include a control condition 
+                    ('placebo')</b> of the same underlying music without Brain.fm
+                    technology applied, so we can be sure our tech is what makes the difference.
+                </p>
+            </div>
         </div>
     </div>
 </body>

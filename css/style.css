@@ -22,6 +22,7 @@
 
 body {
     background-color: rgba(73, 18, 246);
+    color: white;
 }
 
 h1 {
@@ -30,11 +31,11 @@ h1 {
 
 h2 {
     font-size: 51px;
-    color: white;
     font-family: "abrade-semi-light";
     margin: 0px;
     z-index: 1;
     position: relative;
+    display: flex;
 }
 
 h3 {
@@ -44,30 +45,78 @@ h3 {
     margin: 0px;
     z-index: 1;
     position: relative;
+    display: flex;
 }
 
-/* Color of anchor link text */
-a:link, a:visited, a:hover {
-    color: white;
-    /* removes underline */
-    text-decoration: none;
+h4 {
+    font-size: 30px;
+    font-family: "abrade-bold";
+    display: flex;
+    /* used margin instead of margin top 
+    to override existing margin presets*/
+    margin: 15px 0px 0px 0px;
+}
+
+p {
+    font-size: 21px;
+    font-family: "abrade-semi-light";
+    font-weight: 700;
 }
 
 .section {
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 60px;
+}
+
+.section-3-box {
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    padding-right: 100px;
+    
 }
 
 .button {
-    color: white;
     background-image: linear-gradient(to right, rgb(235, 159, 61) , rgb(238, 127, 57));
+    color: white;
     border: 0px;
     font-family: "abrade-bold";
     border-radius: 200px;
     font-size: 22px;
     /* removes underline */
     text-decoration: none;
+}
+
+.bolded {
+    font-family: "abrade-bold";
+}
+
+#section-1 {
+    margin-top: 18px;
+    margin-right: 180px;
+}
+
+#section-2 {
+    margin-top: 250px;
+}
+
+#section-2-left-side {
+    display: flex;
+    flex-direction: column; 
+    flex: 1 1 200px; 
+    margin-top: 92px;
+}
+
+#section-2-right-side {
+    flex: 0 1 700px;
+    /*placement in layering of elements*/
+    z-index: 0;
+    margin-left: -50px;
+}
+
+#section-3 {
+    margin-top: 18px;
 }
 
 #try-button {
@@ -82,10 +131,14 @@ a:link, a:visited, a:hover {
     flex-grow: 2;
     margin-right: 20px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 #logo-img {
     width: 13%;
+    /*Used online resource to compute 
+    filters to change to desired color*/
+    filter: invert(100%) sepia(0%) saturate(24%) hue-rotate(114deg) brightness(108%) contrast(108%)
 }
 
 #first-paragraph {
@@ -96,6 +149,7 @@ a:link, a:visited, a:hover {
     /*placement in layering of elements*/
     z-index: 1;
     margin-right: -50px;
+    position: relative;
 }
 
 #featured-text {
@@ -103,14 +157,6 @@ a:link, a:visited, a:hover {
     font-family: "abrade-book";
     color: rgb(219, 206, 252);
     font-weight: 600;
-}
-
-#gif-1 {
-    display: flex;
-    flex: 0 1 700px;
-    /*placement in layering of elements*/
-    z-index: 0;
-    margin-left: -50px;
 }
 
 #featured-img {
@@ -123,4 +169,33 @@ a:link, a:visited, a:hover {
     align-content: flex-start;
     padding: 25px 70px;
     width: 300px;
+    white-space: normal;
+}
+
+#see-science-text {
+    font-size: 25px;
+    font-family: "abrade-bold";
+    margin: 230px 0px 100px 0px;
+    display: flex; 
+    justify-content: center;
+}
+
+#gif-2 {
+    width: 100%;
+}
+
+#gif-3 {
+    width: 75%;
+    margin: 0px 0px 25px 55px;
+}
+
+#explore-link {
+    font-size: 22px;
+    font-family: "abrade-bold";
+    display: flex;
+    margin: 15px 0px 0px 0px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 9px;
+    color: white;
 }
